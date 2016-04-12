@@ -1,0 +1,12 @@
+(define (deep-map fn s)
+  (if (null? s)
+        s
+        (if (list? (car s))
+            (if (list? (car (car s)))
+                (cons (cons (cons (fn (car (car (car s)))) (deep-map fn (cdr (car (car s))))) (deep-map fn (cdr (car s)))) (deep-map fn (cdr s)))
+                (cons (cons (fn (car (car s))) (deep-map fn (cdr (car s)))) (deep-map fn (cdr s)))
+                )
+            (cons (fn (car s)) (deep-map fn (cdr s)))
+        )
+)
+)
