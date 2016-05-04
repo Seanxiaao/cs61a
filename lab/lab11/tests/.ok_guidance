@@ -1,0 +1,621 @@
+{
+  "dictAssessId2WA2DictInfo": {
+    ">>> class IteratorA:\n...    def __init__(self):\n...        self.start = 10\n...    def __next__(self):\n...        if self.start > 100:\n...            raise StopIteration\n...        self.start += 20\n...        return self.start\n...    def __iter__(self):\n...        return self\n>>> iterator = IteratorA()\n>>> [num for num in iterator]\nLOCKED_ANSWER\n>>> [num for num in iterator]\nLOCKED_ANSWER\n": {
+      "['(10 30 50 70 90)']": {
+        "dictMisU2Msg": {
+          "OutOfOrderStopIterVsInc": "0",
+          "PythonListSyntaxIsScheme": "5",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "OutOfOrderStopIterVsInc",
+          "PythonListSyntaxIsScheme",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['0']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['1']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['10 30 50 70 90']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "ListDoesNotNeedCommas": "3",
+          "OutOfOrderStopIterVsInc": "0",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "ListDoesNotNeedCommas",
+          "OutOfOrderStopIterVsInc",
+          "UseInitialValueWhenNotPartOfAnswer",
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['10']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['100']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['11']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['110']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "ReturnLastInListComprehension": "4"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList",
+          "ReturnLastInListComprehension"
+        ]
+      },
+      "['2']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['20']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['30']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "ReturnFirstInListComprehension": "4"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList",
+          "ReturnFirstInListComprehension"
+        ]
+      },
+      "['4']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['40']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['5']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['50']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['60']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['70']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['80']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['90']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "OutOfOrderStopIterVsInc": "0",
+          "ReturnLastInListComprehension": "4"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList",
+          "OutOfOrderStopIterVsInc",
+          "ReturnLastInListComprehension"
+        ]
+      },
+      "['[10 30 50 70 90 110]']": {
+        "dictMisU2Msg": {
+          "ListDoesNotNeedCommas": "3",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "UseInitialValueWhenNotPartOfAnswer",
+          "ListDoesNotNeedCommas"
+        ]
+      },
+      "['[10 30 50 70 90]']": {
+        "dictMisU2Msg": {
+          "ListDoesNotNeedCommas": "3",
+          "OutOfOrderStopIterVsInc": "0",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "ListDoesNotNeedCommas",
+          "OutOfOrderStopIterVsInc",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10, 30, 50, 70, 90, 110]']": {
+        "dictMisU2Msg": {
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10, 30, 50, 70, 90, StopIteration]']": {
+        "dictMisU2Msg": {
+          "ErrorRaisedIsReturnValue": "6",
+          "OutOfOrderStopIterVsInc": "0",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "ErrorRaisedIsReturnValue",
+          "OutOfOrderStopIterVsInc",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10, 30, 50, 70, 90]']": {
+        "dictMisU2Msg": {
+          "OutOfOrderStopIterVsInc": "0",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "OutOfOrderStopIterVsInc",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10,30,50,70,90,110]']": {
+        "dictMisU2Msg": {
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10,30,50,70,90]']": {
+        "dictMisU2Msg": {
+          "OutOfOrderStopIterVsInc": "0",
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "OutOfOrderStopIterVsInc",
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[10]']": {
+        "dictMisU2Msg": {
+          "UseInitialValueWhenNotPartOfAnswer": "1"
+        },
+        "lstMisU": [
+          "UseInitialValueWhenNotPartOfAnswer"
+        ]
+      },
+      "['[110]']": {
+        "dictMisU2Msg": {
+          "ReturnLastInListComprehension": "4"
+        },
+        "lstMisU": [
+          "ReturnLastInListComprehension"
+        ]
+      },
+      "['[30 50 70 90 110]']": {
+        "dictMisU2Msg": {
+          "ListDoesNotNeedCommas": "3"
+        },
+        "lstMisU": [
+          "ListDoesNotNeedCommas"
+        ]
+      },
+      "['[30 50 70 90]']": {
+        "dictMisU2Msg": {
+          "ListDoesNotNeedCommas": "3",
+          "OutOfOrderStopIterVsInc": "0"
+        },
+        "lstMisU": [
+          "ListDoesNotNeedCommas",
+          "OutOfOrderStopIterVsInc"
+        ]
+      },
+      "['[30, 50, 70, 90]']": {
+        "dictMisU2Msg": {
+          "OutOfOrderStopIterVsInc": "0"
+        },
+        "lstMisU": [
+          "OutOfOrderStopIterVsInc"
+        ]
+      },
+      "['[30]']": {
+        "dictMisU2Msg": {
+          "ReturnFirstInListComprehension": "4"
+        },
+        "lstMisU": [
+          "ReturnFirstInListComprehension"
+        ]
+      },
+      "['[90]']": {
+        "dictMisU2Msg": {
+          "OutOfOrderStopIterVsInc": "0",
+          "ReturnLastInListComprehension": "4"
+        },
+        "lstMisU": [
+          "OutOfOrderStopIterVsInc",
+          "ReturnLastInListComprehension"
+        ]
+      },
+      "['num']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      }
+    },
+    ">>> class IteratorA:\n...    def __init__(self):\n...        self.start = 10\n...    def __next__(self):\n...        if self.start > 100:\n...            raise StopIteration\n...        self.start += 20\n...        return self.start\n...    def __iter__(self):\n...        return self\n>>> iterator = IteratorA()\n>>> [num for num in iterator]\n[30, 50, 70, 90, 110]\n>>> [num for num in iterator]\nLOCKED_ANSWER\n": {
+      "['110']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2",
+          "StopIterationReturnsRecentValue": "7"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList",
+          "StopIterationReturnsRecentValue"
+        ]
+      },
+      "['Error']": {
+        "dictMisU2Msg": {
+          "RaisingAnErrorHaltsProgram": "6"
+        },
+        "lstMisU": [
+          "RaisingAnErrorHaltsProgram"
+        ]
+      },
+      "['None']": {
+        "dictMisU2Msg": {
+          "ListComprehensionNotReturnList": "2"
+        },
+        "lstMisU": [
+          "ListComprehensionNotReturnList"
+        ]
+      },
+      "['StopIteration']": {
+        "dictMisU2Msg": {
+          "RaisingAnErrorHaltsProgram": "6"
+        },
+        "lstMisU": [
+          "RaisingAnErrorHaltsProgram"
+        ]
+      },
+      "['[110]']": {
+        "dictMisU2Msg": {
+          "StopIterationReturnsRecentValue": "7"
+        },
+        "lstMisU": [
+          "StopIterationReturnsRecentValue"
+        ]
+      },
+      "['[130]']": {
+        "dictMisU2Msg": {
+          "StopIterContinues": "7"
+        },
+        "lstMisU": [
+          "StopIterContinues"
+        ]
+      },
+      "['[30, 50, 70, 90, 110]']": {
+        "dictMisU2Msg": {
+          "StartsOverAfterStopIteration": "7"
+        },
+        "lstMisU": [
+          "StartsOverAfterStopIteration"
+        ]
+      },
+      "['[30,50,70,90,110]']": {
+        "dictMisU2Msg": {
+          "StartsOverAfterStopIteration": "7"
+        },
+        "lstMisU": [
+          "StartsOverAfterStopIteration"
+        ]
+      },
+      "['[50, 70, 90, 110]']": {
+        "dictMisU2Msg": {
+          "StartsOverAfterStopIteration": "7"
+        },
+        "lstMisU": [
+          "StartsOverAfterStopIteration"
+        ]
+      },
+      "['[StopIteration]']": {
+        "dictMisU2Msg": {
+          "ErrorRaisedIsReturnValue": "6"
+        },
+        "lstMisU": [
+          "ErrorRaisedIsReturnValue"
+        ]
+      },
+      "['error']": {
+        "dictMisU2Msg": {
+          "RaisingAnErrorHaltsProgram": "6"
+        },
+        "lstMisU": [
+          "RaisingAnErrorHaltsProgram"
+        ]
+      }
+    },
+    ">>> def generator():\n...     print(\"Starting here\")\n...     i = 0\n...     while i < 6:\n...         print(\"Before yield\")\n...         yield i\n...         print(\"After yield\")\n...         i += 1\n>>> g = generator()\n>>> g == iter(g)\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n": {
+      "['False']": {
+        "dictMisU2Msg": {
+          "ImplicitGenIterDoesn'tReturnSelf": "8"
+        },
+        "lstMisU": [
+          "ImplicitGenIterDoesn'tReturnSelf"
+        ]
+      }
+    },
+    ">>> def generator():\n...     print(\"Starting here\")\n...     i = 0\n...     while i < 6:\n...         print(\"Before yield\")\n...         yield i\n...         print(\"After yield\")\n...         i += 1\n>>> g = generator()\n>>> g == iter(g)\nTrue\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n": {
+      "[\"'Before yield'\"]": {
+        "dictMisU2Msg": {
+          "PrintStringWithQuotes": "11"
+        },
+        "lstMisU": [
+          "PrintStringWithQuotes"
+        ]
+      },
+      "['\"After yield\"']": {
+        "dictMisU2Msg": {
+          "PrintStringWithQuotes": "11"
+        },
+        "lstMisU": [
+          "PrintStringWithQuotes"
+        ]
+      },
+      "['\"Before yield\"']": {
+        "dictMisU2Msg": {
+          "PrintStringWithQuotes": "11"
+        },
+        "lstMisU": [
+          "PrintStringWithQuotes"
+        ]
+      },
+      "['\"Starting here\"']": {
+        "dictMisU2Msg": {
+          "PrintStringWithQuotes": "11"
+        },
+        "lstMisU": [
+          "PrintStringWithQuotes"
+        ]
+      },
+      "['0']": {
+        "dictMisU2Msg": {
+          "DoesNotDisplayPrints": "9"
+        },
+        "lstMisU": [
+          "DoesNotDisplayPrints"
+        ]
+      },
+      "['1']": {
+        "dictMisU2Msg": {
+          "DoesNotDisplayPrints": "9",
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc",
+          "DoesNotDisplayPrints"
+        ]
+      },
+      "['2']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['3']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['Starting here', '1']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['Starting here', 'Before yield', '1']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['Starting here', 'Before yield', 'After yield']": {
+        "dictMisU2Msg": {
+          "YieldDoesNotDisplayValue": "12",
+          "YieldDoesNotHalt": "12"
+        },
+        "lstMisU": [
+          "YieldDoesNotHalt",
+          "YieldDoesNotDisplayValue"
+        ]
+      },
+      "['Starting here', 'Before yield', 'Before yield']": {
+        "dictMisU2Msg": {
+          "YieldDoesNotDisplayValue": "12"
+        },
+        "lstMisU": [
+          "YieldDoesNotDisplayValue"
+        ]
+      }
+    },
+    ">>> def generator():\n...     print(\"Starting here\")\n...     i = 0\n...     while i < 6:\n...         print(\"Before yield\")\n...         yield i\n...         print(\"After yield\")\n...         i += 1\n>>> g = generator()\n>>> g == iter(g)\nTrue\n>>> next(g)\nStarting here\nBefore yield\n0\n>>> next(g)\nAfter yield\nBefore yield\n1\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n": {
+      "['Before yield']": {
+        "dictMisU2Msg": {
+          "YieldIsContinueNotReturn": "13"
+        },
+        "lstMisU": [
+          "YieldIsContinueNotReturn"
+        ]
+      }
+    },
+    ">>> def generator():\n...     print(\"Starting here\")\n...     i = 0\n...     while i < 6:\n...         print(\"Before yield\")\n...         yield i\n...         print(\"After yield\")\n...         i += 1\n>>> g = generator()\n>>> g == iter(g)\nTrue\n>>> next(g)\nStarting here\nBefore yield\n0\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n>>> next(g)\nLOCKED_ANSWER\nLOCKED_ANSWER\nLOCKED_ANSWER\n": {
+      "['0']": {
+        "dictMisU2Msg": {
+          "DoesNotDisplayPrints": "9",
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "DoesNotDisplayPrints",
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['1']": {
+        "dictMisU2Msg": {
+          "DoesNotDisplayPrints": "9"
+        },
+        "lstMisU": [
+          "DoesNotDisplayPrints"
+        ]
+      },
+      "['2']": {
+        "dictMisU2Msg": {
+          "DoesNotDisplayPrints": "9",
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc",
+          "DoesNotDisplayPrints"
+        ]
+      },
+      "['After yield', '0']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['After yield', '2']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['After yield', 'Before yield', '2']": {
+        "dictMisU2Msg": {
+          "OutOfOrderYieldVsInc": "10"
+        },
+        "lstMisU": [
+          "OutOfOrderYieldVsInc"
+        ]
+      },
+      "['Before yield']": {
+        "dictMisU2Msg": {
+          "YieldIsContinueNotReturn": "13"
+        },
+        "lstMisU": [
+          "YieldIsContinueNotReturn"
+        ]
+      },
+      "['Starting here']": {
+        "dictMisU2Msg": {
+          "GenSubsequentCallToNextActsLikeFirstCallToNext": "13"
+        },
+        "lstMisU": [
+          "GenSubsequentCallToNextActsLikeFirstCallToNext"
+        ]
+      }
+    }
+  },
+  "dictId2Msg": {
+    "0": "Look closely at the condition where StopIteration is raised and where the\ncondition's value is incremented.",
+    "1": "Think about when __init__ function is called versus when the __next__ function\nis called in an iterator. Also pay attention to when the code increments versus\nreturns the value of self.start in __next__.",
+    "2": "Keep in mind we are evaluting a list comprehension. When a list comprehension is\nevaluated, what is the result? ^('-'^)",
+    "3": "Recall the syntax structure of a Python list. What separates each element in the\nlist? ^('-'^)",
+    "4": "Remember this is a list comprehension, compare how this is similar or different\nfrom a regular for loop.",
+    "5": "Is a scheme list's syntax different than a python list's? ^('-'^)",
+    "6": "Keep in mind StopIteration is an error that is raised and this is in a for loop\nin a list comprehension. How does a for loop handle a raised StopIteration?",
+    "7": "In the prior question StopIteration was raised to end the list comprehension.\nWhat is the value of self.start, when __next__ is called in this list\ncomprehension?",
+    "8": "Think about what calling iter on an iterator/generator is supposed to return and\nwhat g is here.",
+    "9": "Does this code have print statements? ^('-'^)",
+    "10": "Look closely at when | i | is incremented versus yielded.",
+    "11": "What happens when a string is printed? ^('-'^)",
+    "12": "Remember there is a yield after the \"Before yield\" print statement. What does\nthat do?",
+    "13": "On a subsequent call to next, where does the code start executing?"
+  },
+  "dictTg2Func": {
+    "0": "None",
+    "1": "misU2Msg"
+  },
+  "wrongAnsThresh": 2
+}

@@ -114,7 +114,7 @@ def scheme_read(src):
         return val
     elif val == "'":
         # BEGIN Question 1
-        "*** REPLACE THIS LINE ***"
+        return Pair('quote', Pair(scheme_read(src),nil)) #src pop out
         # END Question 1
     elif val == "(":
         return read_tail(src)
@@ -149,7 +149,13 @@ def read_tail(src):
             return nil
         elif src.current() == ".":
             # BEGIN Question 2
-            "*** REPLACE THIS LINE ***"
+            src.pop()
+            first = scheme_read(src)
+            rest = read_tail(src)
+            if rest == nil:
+                return first
+            else:
+                raise SyntaxError("unexpected pair")
             # END Question 2
         else:
             first = scheme_read(src)

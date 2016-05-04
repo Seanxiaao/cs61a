@@ -5,19 +5,40 @@
 
 ; Some utility functions that you may find useful to implement.
 (define (map proc items)
-  'REPLACE-THIS-LINE)
+(if (null? items)
+         '()
+         (cons (proc (car items)) (map proc (cdr items)))))
+
 
 (define (cons-all first rests)
-  'REPLACE-THIS-LINE)
+(if (null? rests)
+    'nil
+    (cons (cons first (car rests)) (cons-all first (cdr rests))))
+)
 
 (define (zip pairs)
-  'REPLACE-THIS-LINE)
+(define firsts (map (lambda (pair) (car pair)) pairs))
+(define seconds (map (lambda (pair) (cadr pair)) pairs))
+(list firsts seconds)
+  )
+
+(define (min lst)
+    (cond ((null? (cdr lst)) (car lst))
+          ((< (car lst) (min (cdr lst))) (car lst))
+          (else (min (cdr lst))))
+)
 
 ;; Problem 18
 ;; Returns a list of two-element lists
 (define (enumerate s)
   ; BEGIN Question 18
-  'REPLACE-THIS-LINE
+  (define (enumerate_helper n s)
+    (if (eq? nil s)
+        s
+        (cons (list n (car s)) (enumerate_helper (+ n 1) (cdr s)))
+        )
+  )
+  (enumerate_helper 0 s)
   )
   ; END Question 18
 
@@ -25,8 +46,14 @@
 ;; List all ways to make change for TOTAL with DENOMS
 (define (list-change total denoms)
   ; BEGIN Question 19
-  'REPLACE-THIS-LINE
-  )
+  (cond ((= total 0) (car denoms))
+        ((or (< total 0) (null? denoms)) nil)
+        (else (cons (cons-all (car denoms) (list-change total
+                     (cdr denoms)))
+                 (cons-all (car denoms) (list-change (- total
+                        (car denoms))
+                     denoms )))))
+)
   ; END Question 19
 
 ;; Problem 20
@@ -43,12 +70,12 @@
 (define (analyze expr)
   (cond ((atom? expr)
          ; BEGIN Question 20
-         'REPLACE-THIS-LINE
+         expr
          ; END Question 20
          )
         ((quoted? expr)
          ; BEGIN Question 20
-         'REPLACE-THIS-LINE
+         expr
          ; END Question 20
          )
         ((or (lambda? expr)
@@ -57,19 +84,24 @@
                (params (cadr expr))
                (body   (cddr expr)))
            ; BEGIN Question 20
-           'REPLACE-THIS-LINE
+           (append (list form params) (map analyze body))
            ; END Question 20
            ))
         ((let? expr)
          (let ((values (cadr expr))
                (body   (cddr expr)))
            ; BEGIN Question 20
-           'REPLACE-THIS-LINE
+           (define zipped (zip values))
+           (define parameters (car zipped))
+           (define param_values (map analyze (cadr zipped)))
+           (define fn (append (list 'lambda parameters) (map analyze body)))
+           (cons fn param_values)
+
            ; END Question 20
            ))
         (else
          ; BEGIN Question 20
-         'REPLACE-THIS-LINE
+         (map analyze expr)
          ; END Question 20
          )))
 
@@ -80,4 +112,3 @@
   'REPLACE-THIS-LINE
   )
   ; END Question 21
-
